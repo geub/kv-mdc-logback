@@ -2,7 +2,7 @@ kv-converter-logback
 ====================
 
 KeyValue Mapped Diagnostic Context converter for logback.
-* Display MDC like `key="value"`;
+* Display log string variables mapped in MDC like `key="value"`;
 * Allows to include a default value in case the value of the MDC is empty;
 * Remove the key if the value is empty.
 
