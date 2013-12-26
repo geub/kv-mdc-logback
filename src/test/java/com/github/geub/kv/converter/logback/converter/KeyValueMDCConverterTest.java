@@ -17,10 +17,10 @@ public class KeyValueMDCConverterTest {
 	}
 
 	/**
-	 * Existe valor padr�o e o valor está nulo. Deve usar o valor padrão.
+	 * There default value and the value is null. Should use the default value.
 	 */
 	@Test
-	public void testChavePossuiValorPadraoEValorEstaNulo_DeveUsarValorPadrao() {
+	public void testThereDefaultValueAndTheValueIsNull_ShouldUseTheDefaultValue() {
 		String valor = null;
 		List<String> lista = new ArrayList<String>();
 		lista.add("login");
@@ -31,10 +31,10 @@ public class KeyValueMDCConverterTest {
 	}
 
 	/**
-	 * Existe valor padrão e o valor está vazio. Deve usar o valor padrão.
+	 * There default value and the value is empty. Should use the default value.
 	 */
 	@Test
-	public void testChavePossuiValorPadraoEValorEstaVazio_DeveUsarValorPadrao() {
+	public void testThereDefaultValueAndTheValueIsEmpty_ShouldUseTheDefaultValue() {
 		String valor = "";
 		List<String> lista = new ArrayList<String>();
 		lista.add("login");
@@ -45,10 +45,10 @@ public class KeyValueMDCConverterTest {
 	}
 
 	/**
-	 * Não existe valor padrão e o valor está vazio. Deve usar valor vazio.
+	 * No default value exists and the value is empty. Must use empty value.
 	 */
 	@Test
-	public void testChaveNãoPossuiValorPadraoEValorEstaVazio_DeveUsarValorVazio() {
+	public void testNoDefaultValueExistsAndTheValueIsEmpty_MustUseEmptyValue() {
 		String valor = "";
 		List<String> lista = new ArrayList<String>();
 		lista.add("login");
@@ -58,29 +58,29 @@ public class KeyValueMDCConverterTest {
 	}
 
 	/**
-	 * Não existe valor padrão e o valor está preenchido. Deve usar valor preenchido.
+	 * No default value exists and the value is filled. Must use value filled.
 	 */
 	@Test
-	public void testChaveNãoPossuiValorPadraoEValorEstaPreenchido_DeveUsarValorPreenchido() {
-		String valor = "usu�rio";
+	public void testNoDefaultValueExistsAndTheValueIsFilled_MustUseValueFilled() {
+		String valor = "user";
 		List<String> lista = new ArrayList<String>();
 		lista.add("login");
 		String chaveValor = this.converter.getValueKey(lista, valor);
-		Assert.assertEquals("login=\"usu�rio\"", chaveValor);
+		Assert.assertEquals("login=\"user\"", chaveValor);
 
 	}
 
 	/**
-	 * Existe valor padrão e o valor está preenchido. Deve usar valor preenchido.
+	 * There default value and the value is filled. Must use value filled.
 	 */
 	@Test
-	public void testChavePossuiValorPadraoEValorEstaPreenchido_DeveUsarValorPreenchido() {
-		String valor = "usu�rio";
+	public void testThereDefaultValueAndTheValueIsFilled_MustUseValueFilled() {
+		String valor = "user";
 		List<String> lista = new ArrayList<String>();
 		lista.add("login");
 		lista.add("anonymous");
 		String chaveValor = this.converter.getValueKey(lista, valor);
-		Assert.assertEquals("login=\"usu�rio\"", chaveValor);
+		Assert.assertEquals("login=\"user\"", chaveValor);
 
 	}
 
