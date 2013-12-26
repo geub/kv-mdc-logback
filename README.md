@@ -13,7 +13,7 @@ Configuration example
 logback.xml:
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender"> 
-        <layout>
+        <layout class="com.github.geub.kv.converter.logback.KeyValuePatternLayout">
             <Pattern>%KV{first} %KV{last} - %m%n</Pattern>
         </layout> 
     </appender>
@@ -27,7 +27,7 @@ Output for first (Tim) and last (Maia):
 logback.xml:
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender"> 
-        <layout>
+        <layout class="com.github.geub.kv.converter.logback.KeyValuePatternLayout">
             <Pattern>%KV{first} %KV{last} - %m%n</Pattern>
         </layout> 
     </appender>
@@ -41,7 +41,7 @@ Output for first (Tim) and last ():
 logback.xml:
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender"> 
-        <layout>
+        <layout class="com.github.geub.kv.converter.logback.KeyValuePatternLayout">
             <Pattern>%KV{first} %KV{last, Maia} - %m%n</Pattern>
         </layout> 
     </appender>
