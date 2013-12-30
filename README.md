@@ -53,3 +53,10 @@ Output for first (Tim) and last ():
 More
 --------------------
 * Mapped Diagnostic Context: <http://logback.qos.ch/manual/mdc.html>,
+
+Release
+-------
+
+* 1.0.0-0
+Initial project
+
