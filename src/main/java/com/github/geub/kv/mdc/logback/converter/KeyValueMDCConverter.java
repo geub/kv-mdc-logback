@@ -1,11 +1,11 @@
-package com.github.geub.kv.converter.logback.converter;
+package com.github.geub.kv.mdc.logback.converter;
 
 import java.util.List;
 
 import ch.qos.logback.classic.pattern.MDCConverter;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 
-import com.github.geub.kv.converter.logback.utils.StringUtils;
+import com.github.geub.kv.mdc.logback.utils.StringUtils;
 
 public class KeyValueMDCConverter extends MDCConverter {
 

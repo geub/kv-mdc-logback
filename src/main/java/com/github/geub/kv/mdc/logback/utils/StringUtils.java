@@ -1,4 +1,4 @@
-package com.github.geub.kv.converter.logback.utils;
+package com.github.geub.kv.mdc.logback.utils;
 
 public class StringUtils {
 

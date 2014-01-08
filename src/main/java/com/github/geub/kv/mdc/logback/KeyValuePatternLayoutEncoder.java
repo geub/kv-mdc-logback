@@ -1,4 +1,4 @@
-package com.github.geub.kv.converter.logback;
+package com.github.geub.kv.mdc.logback;
 
 import ch.qos.logback.classic.PatternLayout;
 import ch.qos.logback.classic.spi.ILoggingEvent;

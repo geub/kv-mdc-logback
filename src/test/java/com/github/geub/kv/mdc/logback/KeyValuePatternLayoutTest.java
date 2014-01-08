@@ -1,4 +1,4 @@
-package com.github.geub.kv.converter.logback;
+package com.github.geub.kv.mdc.logback;
 
 import org.junit.Assert;
 import org.junit.Before;
