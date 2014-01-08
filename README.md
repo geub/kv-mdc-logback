@@ -57,6 +57,9 @@ More
 Release
 -------
 
-* 1.0.0-0
+* 1.0.0
     - Initial project
+
+* 1.0.1
+    - Changed the way double spaces are replaced
 

@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.geub</groupId>
 	<artifactId>kv-converter-logback</artifactId>
-	<version>1.0.0-0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>KV Converter Logback</name>
 	<description>Key value MDC converter for Logback</description>
 	

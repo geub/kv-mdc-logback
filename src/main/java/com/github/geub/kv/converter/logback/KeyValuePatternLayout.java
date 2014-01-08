@@ -22,7 +22,7 @@ public class KeyValuePatternLayout extends PatternLayout {
 
 	protected String removeKeysWithBlankValues(String log) {
 		String s = log.replaceAll(KeyValuePatternLayout.PATTERN_EMPTY_VALUE, KeyValuePatternLayout.EMPTY);
-		return s.trim().replaceAll("\\s+", " ") + KeyValuePatternLayout.NEW_LINE;
+		return s.trim().replaceAll("[ ]+", " ") + KeyValuePatternLayout.NEW_LINE;
 
 	}
 
