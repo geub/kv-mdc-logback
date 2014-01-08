@@ -1,4 +1,4 @@
-kv-converter-logback
+kv-mdc-logback
 ====================
 
 KeyValue Mapped Diagnostic Context converter for logback.
@@ -13,7 +13,7 @@ Configuration example
 logback.xml:
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender"> 
-        <layout class="com.github.geub.kv.converter.logback.KeyValuePatternLayout">
+        <layout class="com.github.geub.kv.mdc.logback.KeyValuePatternLayout">
             <Pattern>%KV{first} %KV{last} - %m%n</Pattern>
         </layout> 
     </appender>
@@ -27,7 +27,7 @@ Output for first (Tim) and last (Maia):
 logback.xml:
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender"> 
-        <layout class="com.github.geub.kv.converter.logback.KeyValuePatternLayout">
+        <layout class="com.github.geub.kv.mdc.logback.KeyValuePatternLayout">
             <Pattern>%KV{first} %KV{last} - %m%n</Pattern>
         </layout> 
     </appender>
@@ -41,7 +41,7 @@ Output for first (Tim) and last ():
 logback.xml:
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender"> 
-        <layout class="com.github.geub.kv.converter.logback.KeyValuePatternLayout">
+        <layout class="com.github.geub.kv.mdc.logback.KeyValuePatternLayout">
             <Pattern>%KV{first} %KV{last, Maia} - %m%n</Pattern>
         </layout> 
     </appender>
@@ -59,7 +59,8 @@ Release
 
 * 1.0.0
     - Initial project
-
 * 1.0.1
     - Changed the way double spaces are replaced
+* 1.0.2
+    - Changed the project name
 
