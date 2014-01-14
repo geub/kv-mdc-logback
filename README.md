@@ -58,9 +58,11 @@ Release
 -------
 
 * 1.0.0
-    - Initial project
+    - Initial project.
 * 1.0.1
-    - Changed the way double spaces are replaced
+    - Changed the way double spaces are replaced.
 * 1.0.2
-    - Changed the project name
+    - Changed the project name.
+* 1.0.3-SNAPSHOT
+    - Included travis.
 
