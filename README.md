@@ -1,4 +1,4 @@
-kv-mdc-logback
+kv-mdc-logback [![Build Status](https://travis-ci.org/geub/kv-mdc-logback.png?branch=master)](https://travis-ci.org/geub/kv-mdc-logback)
 ====================
 
 KeyValue Mapped Diagnostic Context converter for logback.
