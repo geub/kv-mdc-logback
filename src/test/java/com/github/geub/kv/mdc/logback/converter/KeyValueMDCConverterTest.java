@@ -21,11 +21,10 @@ public class KeyValueMDCConverterTest {
 	 */
 	@Test
 	public void testThereDefaultValueAndTheValueIsNull_ShouldUseTheDefaultValue() {
-		String valor = null;
 		List<String> lista = new ArrayList<String>();
 		lista.add("login");
 		lista.add("anonymous");
-		String chaveValor = this.converter.getValueKey(lista, valor);
+		String chaveValor = this.converter.getValueKey(lista, null);
 		Assert.assertEquals("login=\"anonymous\"", chaveValor);
 
 	}
